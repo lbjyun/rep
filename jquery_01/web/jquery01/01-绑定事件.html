@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script >
+        $(function(){
+            /*$("#name").on("click",function () {
+                alert("绑定点击事件");
+            })*/
+
+
+            $("#name").click(function(){
+                alert("aaa")
+            })
+
+            $("#name2").click(function(){
+                //$("#name").off();  解除所有的事件
+                $("#name").off("click")  //只解除click 事件
+            })
+        })
+
+
+        $(function(){
+            $("#name").mouseover(function(){
+                alert("鼠标来了")
+            })
+
+            $("#name").mouseout(function(){
+                alert("鼠标走了")
+            })
+            alert("我要获得焦点了")
+            $("#name").focus();
+
+        })
+
+
+
+    </script>
+</head>
+<body>
+<input id="name" type="text" value="绑定点击事件">
+<input id="name2" type="button" value="解除点击事件">
+</body>
+</html>

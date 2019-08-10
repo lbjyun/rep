@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+
+    </script>
+
+    <script>
+
+        $(function(){
+            //var citys = $("#city li");
+            /*$("#city li").each(function(index,element){
+                //alert(index+":"+$(element).html())
+                alert(index+"："+element.innerHTML)
+            })*/
+
+
+            $("#city li").each(function(){
+                if("上海"== $(this).html()){
+
+                    //return false;  //相当于break 结束循环
+                    return true;   //相当于continue 结束当前循环，进入下一循环
+                }
+                //alert(this.innerHTML)
+                alert($(this).html())
+
+            })
+        })
+
+    </script>
+
+
+</head>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>重庆</li>
+</ul>
+</body>
+</html>
