@@ -1,5 +1,0 @@
-如果一个script 里面使用了src 引入了 js 文件，里面就不能写代码，写了也会被覆盖
-
-获取值 val() html() text()  在里面同时可以设置值  val("aaa") text("bbb")
-
-text()获取文本内容  html() 获取标签体内容
